@@ -6,7 +6,7 @@
 npm install fifo-callback
 ```
 
-```
+```javascript
     import Fifo from 'fifo-callback';
     const queue = new Fifo();
     queue.push(done => {
