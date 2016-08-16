@@ -1,0 +1,40 @@
+{
+  "name": "fifo-callback",
+  "version": "1.0.0",
+  "description": "simple fifo callback queue",
+  "main": "index.js",
+  "scripts": {
+    "test": "ava --timeout=5s",
+    "build": "babel index.js --out-dir lib",
+    "prepublish": "npm build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/gorangajic/fifo-callback.git"
+  },
+  "keywords": [
+    "fifo",
+    "callback",
+    "queue"
+  ],
+  "author": "Goran Gajic <fero.null@gmail.com> (https://github.com/gorangajic)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gorangajic/fifo-callback/issues"
+  },
+  "ava": {
+    "require": [
+      "babel-register"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  },
+  "homepage": "https://github.com/gorangajic/fifo-callback#readme",
+  "devDependencies": {
+    "ava": "0.16.0",
+    "babel-cli": "6.11.4"
+  }
+}
