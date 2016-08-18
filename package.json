@@ -1,6 +1,6 @@
 {
   "name": "fifo-callback",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "simple fifo callback queue",
   "main": "index.js",
   "scripts": {
