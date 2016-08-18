@@ -35,6 +35,7 @@
   "homepage": "https://github.com/gorangajic/fifo-callback#readme",
   "devDependencies": {
     "ava": "0.16.0",
-    "babel-cli": "6.11.4"
+    "babel-cli": "6.11.4",
+    "babel-register": "6.11.6"
   }
 }
