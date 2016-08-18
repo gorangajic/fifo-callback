@@ -30,6 +30,9 @@ class Fifo {
         this.inProgress = false;
         this.check('done');
     }
+    kill() {
+        this.queue = [];
+    }
 }
 
 module.exports = Fifo;

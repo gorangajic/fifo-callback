@@ -73,3 +73,17 @@ test.cb('it should call immediately after delay', t => {
 
     t.is(queue.length, 2);
 });
+
+
+test.cb('it should kill queue so next task is not run', t => {
+    const queue = new Fifo();
+    let i = 0;
+    queue.push(done => {
+        setTimeout(done, 30);
+        queue.kill();
+    });
+    queue.push(done => {
+        t.fail();
+    });
+    setTimeout(() => t.end(), 50);
+})
