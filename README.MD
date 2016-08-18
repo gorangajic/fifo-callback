@@ -1,5 +1,7 @@
 ## fifo-callback
 
+[![Build Status](https://semaphoreci.com/api/v1/gorangajic/fifo-callback/branches/master/badge.svg)](https://semaphoreci.com/gorangajic/fifo-callback)
+
 > simple fifo callback queue
 
 ```
