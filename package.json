@@ -4,7 +4,7 @@
   "description": "simple fifo callback queue",
   "main": "index.js",
   "scripts": {
-    "test": "ava --timeout=5s",
+    "test": "mocha --require babel-register test.js",
     "build": "babel index.js --out-dir lib",
     "prepublish": "npm build"
   },
@@ -34,9 +34,10 @@
   },
   "homepage": "https://github.com/gorangajic/fifo-callback#readme",
   "devDependencies": {
-    "ava": "0.16.0",
     "babel-cli": "6.11.4",
     "babel-preset-es2015": "6.13.2",
-    "babel-register": "6.11.6"
+    "babel-register": "6.11.6",
+    "mocha": "3.0.2",
+    "should": "11.1.0"
   }
 }
